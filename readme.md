@@ -5,7 +5,7 @@
 1. Build the console script
 `pnpm run build:console:compile`
 2. Run the console script
-`node dist/console.js`
+`GITHUB_TOKEN=sljcnsdclnsnclsndcskclsn USER_AGENT="Amazing App 123" node dist/console.js`
 
 ## Publish process
 

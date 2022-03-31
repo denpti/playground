@@ -41,7 +41,7 @@ export class GitHubSearch {
     // Search github for each of the terms and report any relevant data
     return Promise.all(this.searchTerms.map(async term => {
       if (!this.cache[term]) {
-        var q = `${term}+repo:${this.repo.name}`
+        var q = `${term}+repo:${this.repo.path}`
         var response = await this.repo.api.rest.search.code({ q });
 
         this.cache[term] = {
